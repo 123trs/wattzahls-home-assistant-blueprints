@@ -1,0 +1,84 @@
+blueprint:
+  name: "WATTZAHLS.DE – Rollladen Hitzeschutz"
+  description: >
+    Fährt einen Rollladen auf eine einstellbare Hitzeschutz-Position, wenn
+    Außentemperatur und Sonnenhöhe gleichzeitig über ihren Grenzwerten liegen.
+  domain: automation
+  source_url: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
+  author: WATTZAHLS.DE
+  input:
+    temperature_sensor:
+      name: Außentemperatur
+      description: Sensor für die aktuelle Außentemperatur.
+      selector:
+        entity:
+          filter:
+            domain: sensor
+    cover_target:
+      name: Rollladen
+      description: Cover, das in die Hitzeschutz-Position fahren soll.
+      selector:
+        target:
+          entity:
+            domain: cover
+    temperature_above:
+      name: Hitzeschutz ab
+      default: 25
+      selector:
+        number:
+          min: -20
+          max: 60
+          step: 0.5
+          unit_of_measurement: "°C"
+          mode: box
+    sun_elevation_above:
+      name: Sonnenhöhe mindestens
+      description: Hitzeschutz greift erst oberhalb dieser Sonnenhöhe.
+      default: 20
+      selector:
+        number:
+          min: -10
+          max: 80
+          step: 1
+          unit_of_measurement: "°"
+          mode: box
+    cover_position:
+      name: Zielposition
+      description: "0 = geschlossen, 100 = offen."
+      default: 30
+      selector:
+        number:
+          min: 0
+          max: 100
+          unit_of_measurement: "%"
+          mode: slider
+
+mode: single
+max_exceeded: silent
+
+triggers:
+  - trigger: numeric_state
+    entity_id: !input temperature_sensor
+    above: !input temperature_above
+    id: warm
+  - trigger: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    above: !input sun_elevation_above
+    id: sunny
+
+conditions:
+  - condition: numeric_state
+    entity_id: !input temperature_sensor
+    above: !input temperature_above
+  - condition: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    above: !input sun_elevation_above
+
+actions:
+  - alias: "Rollladen in Hitzeschutz-Position fahren"
+    action: cover.set_cover_position
+    target: !input cover_target
+    data:
+      position: !input cover_position
