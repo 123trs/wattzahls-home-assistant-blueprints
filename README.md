@@ -37,15 +37,27 @@ Die Rollladen-Hitzeschutz-Vorlage ebenfalls:
 
 https://community.home-assistant.io/t/roller-shutter-heat-protection-temperature-sun-elevation-beginner-friendly/1024818
 
-## Anleitung
+## Anleitungen & kostenlose Werkzeuge
 
-Ausführliche Erklärung und Einsteiger-Anleitung:
+Ausführliche Erklärung und Einsteiger-Anleitung zu den Blueprints:
 
 https://wattzahls.de/home-assistant-blueprints.html
 
-Die Blueprints gehören zur Serie **„Home Assistant mit KI – ohne Vorkenntnisse“**:
+Die komplette Serie **„Home Assistant mit KI & ChatGPT – ohne Vorkenntnisse“**:
 
 https://wattzahls.de/home-assistant-mit-ki.html
+
+Kostenloser **Home Assistant YAML Generator** mit Vorlagen für Licht, Heizung, Rollladen, Waschmaschine und mehr:
+
+https://wattzahls.de/home-assistant-automation-generator.html
+
+Praxisanleitung: **Home Assistant Custom Integration mit ChatGPT erstellen**:
+
+https://wattzahls.de/home-assistant-custom-integration-chatgpt.html
+
+Alle Home-Assistant-Integrationen einfach erklärt:
+
+https://wattzahls.de/home-assistant-integrationen.html
 
 ## Grundsatz
 
