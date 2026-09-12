@@ -165,4 +165,14 @@ actions:
               entity_id: !input running_helper
 ~~~
 
+## More beginner-friendly examples
+
+If you prefer to first see and modify a plain Home Assistant automation before using a blueprint, I also made a free browser-based YAML generator with simple examples:
+
+https://wattzahls.de/home-assistant-automation-generator.html
+
+The broader German beginner series explains the same building blocks step by step with AI/ChatGPT as a helper:
+
+https://wattzahls.de/home-assistant-mit-ki.html
+
 Feedback is welcome, especially from people using different washing machines or smart plugs. My goal with this blueprint is to keep it small enough that a Home Assistant beginner can still understand every step.
