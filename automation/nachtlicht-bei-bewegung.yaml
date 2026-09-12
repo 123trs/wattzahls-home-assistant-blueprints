@@ -4,7 +4,7 @@ blueprint:
     Schaltet bei Bewegung innerhalb eines Nacht-Zeitfensters ein Licht gedimmt ein
     und nach Ende der Bewegung plus Nachlauf wieder aus.
   domain: automation
-  source_url: https://wattzahls.de/blueprints/automation/wattzahls/nachtlicht-bei-bewegung.yaml
+  source_url: https://github.com/123trs/wattzahls-home-assistant-blueprints/blob/main/automation/nachtlicht-bei-bewegung.yaml
   author: WATTZAHLS.DE
   input:
     motion_entity:

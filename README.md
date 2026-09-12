@@ -8,7 +8,7 @@ Die Vorlagen sind bewusst überschaubar gehalten: wenige Eingaben, klarer Zweck 
 
 Bewegungssensor und Licht auswählen, Nacht-Zeitfenster, Helligkeit und Nachlauf festlegen.
 
-[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fwattzahls.de%2Fblueprints%2Fautomation%2Fwattzahls%2Fnachtlicht-bei-bewegung.yaml)
+[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Fnachtlicht-bei-bewegung.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/nachtlicht-bei-bewegung.yaml
 
@@ -16,7 +16,7 @@ Quelle: https://wattzahls.de/blueprints/automation/wattzahls/nachtlicht-bei-bewe
 
 Erkennt zuerst einen echten Waschgang und meldet anschließend zuverlässig „fertig“. Ein input_boolean verhindert Standby-Fehlmeldungen.
 
-[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fwattzahls.de%2Fblueprints%2Fautomation%2Fwattzahls%2Fwaschmaschine-fertig.yaml)
+[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Fwaschmaschine-fertig.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/waschmaschine-fertig.yaml
 
@@ -24,7 +24,7 @@ Quelle: https://wattzahls.de/blueprints/automation/wattzahls/waschmaschine-ferti
 
 Außentemperatur und Sonnenhöhe müssen gleichzeitig über den Grenzwerten liegen. Dann fährt der Rollladen auf die gewünschte Zielposition.
 
-[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fwattzahls.de%2Fblueprints%2Fautomation%2Fwattzahls%2Frollladen-hitzeschutz.yaml)
+[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Frollladen-hitzeschutz.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
 ## Anleitung

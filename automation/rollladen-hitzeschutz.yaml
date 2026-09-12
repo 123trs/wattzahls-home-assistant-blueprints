@@ -4,7 +4,7 @@ blueprint:
     Fährt einen Rollladen auf eine einstellbare Hitzeschutz-Position, wenn
     Außentemperatur und Sonnenhöhe gleichzeitig über ihren Grenzwerten liegen.
   domain: automation
-  source_url: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
+  source_url: https://github.com/123trs/wattzahls-home-assistant-blueprints/blob/main/automation/rollladen-hitzeschutz.yaml
   author: WATTZAHLS.DE
   input:
     temperature_sensor:

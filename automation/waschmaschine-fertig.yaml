@@ -5,7 +5,7 @@ blueprint:
     das Ende. Ein input_boolean-Helfer verhindert Fehlmeldungen im normalen Standby.
     Anschließend wird eine Benachrichtigung an die Home-Assistant-Companion-App gesendet.
   domain: automation
-  source_url: https://wattzahls.de/blueprints/automation/wattzahls/waschmaschine-fertig.yaml
+  source_url: https://github.com/123trs/wattzahls-home-assistant-blueprints/blob/main/automation/waschmaschine-fertig.yaml
   author: WATTZAHLS.DE
   input:
     power_sensor:
