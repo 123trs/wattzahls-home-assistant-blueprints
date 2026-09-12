@@ -27,6 +27,12 @@ Außentemperatur und Sonnenhöhe müssen gleichzeitig über den Grenzwerten lieg
 [![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Frollladen-hitzeschutz.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
+## Home Assistant Community
+
+Die Waschmaschinen-Vorlage ist auch im offiziellen Home Assistant Blueprints Exchange veröffentlicht:
+
+https://community.home-assistant.io/t/simple-washing-machine-finished-notification-power-sensor-helper-beginner-friendly/1024799
+
 ## Anleitung
 
 Ausführliche Erklärung und Einsteiger-Anleitung:
