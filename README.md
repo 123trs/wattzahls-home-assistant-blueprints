@@ -37,6 +37,10 @@ Die Rollladen-Hitzeschutz-Vorlage ebenfalls:
 
 https://community.home-assistant.io/t/roller-shutter-heat-protection-temperature-sun-elevation-beginner-friendly/1024818
 
+Der kostenlose Home Assistant YAML Generator wird in **Share your Projects!** vorgestellt:
+
+https://community.home-assistant.io/t/free-home-assistant-yaml-generator-10-simple-automation-templates-beginner-friendly/1024901
+
 ## Anleitungen & kostenlose Werkzeuge
 
 Ausführliche Erklärung und Einsteiger-Anleitung zu den Blueprints:
