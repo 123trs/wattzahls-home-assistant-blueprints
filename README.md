@@ -33,6 +33,10 @@ Die Waschmaschinen-Vorlage ist auch im offiziellen Home Assistant Blueprints Exc
 
 https://community.home-assistant.io/t/simple-washing-machine-finished-notification-power-sensor-helper-beginner-friendly/1024799
 
+Die Rollladen-Hitzeschutz-Vorlage ebenfalls:
+
+https://community.home-assistant.io/t/roller-shutter-heat-protection-temperature-sun-elevation-beginner-friendly/1024818
+
 ## Anleitung
 
 Ausführliche Erklärung und Einsteiger-Anleitung:
