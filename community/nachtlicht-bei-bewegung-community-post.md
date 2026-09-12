@@ -36,4 +36,14 @@ The time window can cross midnight.
 
 [German beginner guide](https://wattzahls.de/home-assistant-blueprints.html)
 
+## More beginner-friendly examples
+
+If you prefer to first see and modify a plain Home Assistant automation before using a blueprint, I also made a free browser-based YAML generator with simple examples:
+
+https://wattzahls.de/home-assistant-automation-generator.html
+
+The broader German beginner series explains the same building blocks step by step with AI/ChatGPT as a helper:
+
+https://wattzahls.de/home-assistant-mit-ki.html
+
 Feedback is welcome. My goal is to keep this blueprint small enough that a Home Assistant beginner can understand every step.
