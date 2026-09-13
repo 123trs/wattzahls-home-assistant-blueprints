@@ -118,7 +118,7 @@ action:
             id: finished
           - condition: state
             entity_id: !input running_helper
-            state: "on"
+            state: 'on'
         sequence:
           - alias: Send finished notification
             device_id: !input notify_device
