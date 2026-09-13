@@ -5,6 +5,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 
 ➡️ **Blueprints & Anleitung:** https://wattzahls.de/home-assistant-blueprints.html  
 ➡️ **Home Assistant mit KI & ChatGPT – kompletter Einsteigerkurs:** https://wattzahls.de/home-assistant-mit-ki.html  
+➡️ **Home Assistant Automation mit ChatGPT erstellen:** https://wattzahls.de/home-assistant-automation-chatgpt.html  
 ➡️ **Kostenloser Home Assistant YAML Generator:** https://wattzahls.de/home-assistant-automation-generator.html  
 ➡️ **Eigene Home Assistant Custom Integration mit ChatGPT erstellen:** https://wattzahls.de/home-assistant-custom-integration-chatgpt.html
 
@@ -15,6 +16,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 | 🌙 Nachtlicht | Bewegung + Zeitfenster + Helligkeit + Nachlauf | Blueprint unten importieren |
 | 🧺 Waschmaschine fertig | Meldung nach echtem Waschgang statt Standby-Fehlalarm | Blueprint unten importieren |
 | ☀️ Rollladen Hitzeschutz | Temperatur + Sonnenhöhe + Zielposition | Blueprint unten importieren |
+| 💬 ChatGPT Automation | Wunsch in Alltagssprache planen, mit echten Entity-IDs und Test-Workflow | https://wattzahls.de/home-assistant-automation-chatgpt.html |
 | ⚙️ YAML Generator | 10 einfache Automations-Rezepte ohne YAML-Frust | https://wattzahls.de/home-assistant-automation-generator.html |
 | 🤖 Home Assistant mit KI | Vom ersten Start bis zu Automationen, Integrationen und Fehlersuche | https://wattzahls.de/home-assistant-mit-ki.html |
 
@@ -68,6 +70,10 @@ https://wattzahls.de/home-assistant-blueprints.html
 Die komplette Serie **„Home Assistant mit KI & ChatGPT – ohne Vorkenntnisse“**:
 
 https://wattzahls.de/home-assistant-mit-ki.html
+
+Praxisanleitung: **Home Assistant Automation mit ChatGPT erstellen – ohne YAML-Vorkenntnisse**:
+
+https://wattzahls.de/home-assistant-automation-chatgpt.html
 
 Kostenloser **Home Assistant YAML Generator** mit Vorlagen für Licht, Heizung, Rollladen, Waschmaschine und mehr:
 
