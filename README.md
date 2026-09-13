@@ -1,5 +1,23 @@
 # WATTZAHLS.DE – Home Assistant Blueprints
 
+**Kostenlose Home-Assistant-Blueprints, YAML-Automationen und Schritt-für-Schritt-Anleitungen für Einsteiger.**  
+Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass man nicht nur kopiert, sondern versteht, was passiert.
+
+➡️ **Blueprints & Anleitung:** https://wattzahls.de/home-assistant-blueprints.html  
+➡️ **Home Assistant mit KI & ChatGPT – kompletter Einsteigerkurs:** https://wattzahls.de/home-assistant-mit-ki.html  
+➡️ **Kostenloser Home Assistant YAML Generator:** https://wattzahls.de/home-assistant-automation-generator.html  
+➡️ **Eigene Home Assistant Custom Integration mit ChatGPT erstellen:** https://wattzahls.de/home-assistant-custom-integration-chatgpt.html
+
+## Schnellstart
+
+| Lösung | Wofür? | Direkt |
+|---|---|---|
+| 🌙 Nachtlicht | Bewegung + Zeitfenster + Helligkeit + Nachlauf | Blueprint unten importieren |
+| 🧺 Waschmaschine fertig | Meldung nach echtem Waschgang statt Standby-Fehlalarm | Blueprint unten importieren |
+| ☀️ Rollladen Hitzeschutz | Temperatur + Sonnenhöhe + Zielposition | Blueprint unten importieren |
+| ⚙️ YAML Generator | 10 einfache Automations-Rezepte ohne YAML-Frust | https://wattzahls.de/home-assistant-automation-generator.html |
+| 🤖 Home Assistant mit KI | Vom ersten Start bis zu Automationen, Integrationen und Fehlersuche | https://wattzahls.de/home-assistant-mit-ki.html |
+
 Einfache, nachvollziehbare Home-Assistant-Blueprints aus der Praxis von **WATTZAHLS.DE**.
 
 Die Vorlagen sind bewusst überschaubar gehalten: wenige Eingaben, klarer Zweck und keine unnötige Magie.
