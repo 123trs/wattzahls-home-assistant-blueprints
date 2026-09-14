@@ -97,6 +97,12 @@ Alle Home-Assistant-Integrationen einfach erklärt:
 
 https://wattzahls.de/home-assistant-integrationen.html
 
+## Weitere Praxis-Dokumente im Repo
+
+- [Home Assistant Integrationen für Einsteiger](docs/home-assistant-integrationen-einstieg.md) – offizieller Weg zuerst, Custom Integration erst bei echtem Bedarf
+- [Standby-Strom messen und mit Home Assistant automatisieren](docs/standby-strom-messen-und-automatisieren.md) – erst messen, dann Grenzwerte und Abschaltung bauen
+- [Heizkennlinie optimieren: messen statt raten](docs/heizkennlinie-messen-statt-raten.md) – kleine Änderungen mit echten Messwerten bewerten
+
 ## Grundsatz
 
 **Verstehen. Testen. Dann automatisieren.**
