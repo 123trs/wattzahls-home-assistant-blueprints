@@ -71,6 +71,10 @@ Der kostenlose Home Assistant YAML Generator wird in **Share your Projects!** vo
 
 https://community.home-assistant.io/t/free-home-assistant-yaml-generator-10-simple-automation-templates-beginner-friendly/1024901
 
+Der **Felix Speicherkapitän** wird hier vorgestellt:
+
+https://community.home-assistant.io/t/felix-speicherkapitan-pv-battery-dynamic-tariff-calculator-for-home-assistant/1025143
+
 ## Anleitungen & kostenlose Werkzeuge
 
 Ausführliche Erklärung und Einsteiger-Anleitung zu den Blueprints:
