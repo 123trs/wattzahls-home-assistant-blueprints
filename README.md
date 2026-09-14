@@ -8,7 +8,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 ➡️ **Home Assistant Automation mit ChatGPT erstellen:** https://wattzahls.de/home-assistant-automation-chatgpt.html  
 ➡️ **Kostenloser Home Assistant YAML Generator:** https://wattzahls.de/home-assistant-automation-generator.html  
 ➡️ **Eigene Home Assistant Custom Integration mit ChatGPT erstellen:** https://wattzahls.de/home-assistant-custom-integration-chatgpt.html  
-➡️ **Felix SpeicherPilot – PV-Speicher + dynamischer Tarif + HA-YAML:** https://wattzahls.de/speicherpilot.html
+➡️ **Felix Speicherkapitän – PV-Speicher + dynamischer Tarif + HA-YAML:** https://wattzahls.de/speicherkapitaen.html
 
 ## Schnellstart
 
@@ -20,7 +20,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 | 💬 ChatGPT Automation | Wunsch in Alltagssprache planen, mit echten Entity-IDs und Test-Workflow | https://wattzahls.de/home-assistant-automation-chatgpt.html |
 | ⚙️ YAML Generator | 10 einfache Automations-Rezepte ohne YAML-Frust | https://wattzahls.de/home-assistant-automation-generator.html |
 | 🤖 Home Assistant mit KI | Vom ersten Start bis zu Automationen, Integrationen und Fehlersuche | https://wattzahls.de/home-assistant-mit-ki.html |
-| 🔋 Felix SpeicherPilot | PV-Prognose, SOC und dynamischen Tarif zu Ziel-SOC + HA-YAML verbinden | https://wattzahls.de/speicherpilot.html |
+| 🔋 Felix Speicherkapitän | PV-Prognose, SOC und dynamischen Tarif zu Ziel-SOC + HA-YAML verbinden | https://wattzahls.de/speicherkapitaen.html |
 
 Einfache, nachvollziehbare Home-Assistant-Blueprints aus der Praxis von **WATTZAHLS.DE**.
 
@@ -49,12 +49,12 @@ Außentemperatur und Sonnenhöhe müssen gleichzeitig über den Grenzwerten lieg
 [![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Frollladen-hitzeschutz.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
-## 🔋 Felix SpeicherPilot
+## 🔋 Felix Speicherkapitän
 
-Der **Felix SpeicherPilot** ist unser kostenloses Werkzeug für PV-Speicher mit dynamischem Stromtarif. Er berechnet aus SOC, PV-Prognose, Verbrauch, Wirkungsgrad und Strompreisen ein sinnvolles Ziel-SOC und erzeugt anschließend ein Home-Assistant-YAML-Grundgerüst.
+Der **Felix Speicherkapitän** ist unser kostenloses Werkzeug für PV-Speicher mit dynamischem Stromtarif. Er berechnet aus SOC, PV-Prognose, Verbrauch, Wirkungsgrad und Strompreisen ein sinnvolles Ziel-SOC und erzeugt anschließend ein Home-Assistant-YAML-Grundgerüst.
 
-➡️ **Rechner:** https://wattzahls.de/speicherpilot.html  
-➡️ **Technische Erklärung im Repo:** [docs/felix-speicherpilot.md](docs/felix-speicherpilot.md)  
+➡️ **Rechner:** https://wattzahls.de/speicherkapitaen.html  
+➡️ **Technische Erklärung im Repo:** [docs/felix-speicherkapitaen.md](docs/felix-speicherkapitaen.md)  
 ➡️ **Home-Assistant-Anleitung:** https://wattzahls.de/home-assistant-batteriespeicher-laden.html
 
 ## Home Assistant Community
