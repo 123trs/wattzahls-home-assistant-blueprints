@@ -75,6 +75,10 @@ Der **Felix Speicherkapitän** wird hier vorgestellt:
 
 https://community.home-assistant.io/t/felix-speicherkapitan-pv-battery-dynamic-tariff-calculator-for-home-assistant/1025143
 
+Diskussion zur Preis-/PV-Logik im Photovoltaikforum:
+
+https://www.photovoltaikforum.com/thread/238861-stromspeicher-mit-dynamischen-g%C3%BCnstigem-netzstrom-laden-tibber-zu-hochpreis-phas/?postID=4877191#post4877191
+
 ## Anleitungen & kostenlose Werkzeuge
 
 Ausführliche Erklärung und Einsteiger-Anleitung zu den Blueprints:
