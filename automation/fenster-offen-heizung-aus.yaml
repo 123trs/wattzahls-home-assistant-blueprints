@@ -1,0 +1,127 @@
+blueprint:
+  name: "WATTZAHLS.DE – Fenster offen → Heizung aus"
+  description: >
+    Schaltet einen Thermostat aus, wenn ein Fenster oder eine Tür länger geöffnet bleibt,
+    und nach dem Schließen wieder ein. Ein input_boolean-Helfer merkt sich, ob dieser
+    Blueprint die Heizung selbst ausgeschaltet hat. Dadurch wird ein bereits manuell
+    ausgeschalteter Thermostat beim Schließen nicht versehentlich eingeschaltet.
+    Voraussetzung: Das climate-Gerät unterstützt climate.turn_off und climate.turn_on.
+  domain: automation
+  source_url: https://github.com/123trs/wattzahls-home-assistant-blueprints/blob/main/automation/fenster-offen-heizung-aus.yaml
+  author: WATTZAHLS.DE
+  homeassistant:
+    min_version: "2024.10.0"
+  input:
+    devices:
+      name: Geräte und Helfer
+      icon: mdi:radiator
+      input:
+        window_entity:
+          name: Fenster- oder Türkontakt
+          description: Kontakt, der das Lüften erkennt.
+          selector:
+            entity:
+              filter:
+                - domain: binary_sensor
+                  device_class: window
+                - domain: binary_sensor
+                  device_class: door
+                - domain: binary_sensor
+                  device_class: opening
+        climate_entity:
+          name: Thermostat
+          description: Climate-Entität, die beim Lüften aus- und danach wieder eingeschaltet wird.
+          selector:
+            entity:
+              domain: climate
+        managed_helper:
+          name: Merker-Helfer
+          description: >
+            input_boolean-Helfer nur für diese Blueprint-Instanz. Er merkt sich,
+            ob der Blueprint die Heizung selbst ausgeschaltet hat.
+          selector:
+            entity:
+              domain: input_boolean
+    settings:
+      name: Zeiten
+      icon: mdi:timer-outline
+      collapsed: true
+      input:
+        open_wait:
+          name: Ausschalten nach
+          description: So lange muss das Fenster geöffnet sein, bevor die Heizung ausgeschaltet wird.
+          default: 30
+          selector:
+            number:
+              min: 0
+              max: 1800
+              step: 5
+              unit_of_measurement: seconds
+              mode: box
+        close_wait:
+          name: Wiedereinschalten nach
+          description: So lange muss das Fenster wieder geschlossen sein.
+          default: 60
+          selector:
+            number:
+              min: 0
+              max: 1800
+              step: 5
+              unit_of_measurement: seconds
+              mode: box
+
+mode: restart
+max_exceeded: silent
+
+triggers:
+  - trigger: state
+    entity_id: !input window_entity
+    from: "off"
+    to: "on"
+    for:
+      seconds: !input open_wait
+    id: opened
+
+  - trigger: state
+    entity_id: !input window_entity
+    from: "on"
+    to: "off"
+    for:
+      seconds: !input close_wait
+    id: closed
+
+actions:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: opened
+          - condition: not
+            conditions:
+              - condition: state
+                entity_id: !input climate_entity
+                state: "off"
+        sequence:
+          - alias: "Heizung ausschalten"
+            action: climate.turn_off
+            target:
+              entity_id: !input climate_entity
+          - alias: "Merker setzen"
+            action: input_boolean.turn_on
+            target:
+              entity_id: !input managed_helper
+
+      - conditions:
+          - condition: trigger
+            id: closed
+          - condition: state
+            entity_id: !input managed_helper
+            state: "on"
+        sequence:
+          - alias: "Heizung wieder einschalten"
+            action: climate.turn_on
+            target:
+              entity_id: !input climate_entity
+          - alias: "Merker zurücksetzen"
+            action: input_boolean.turn_off
+            target:
+              entity_id: !input managed_helper
