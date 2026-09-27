@@ -1,0 +1,73 @@
+blueprint:
+  name: "WATTZAHLS.DE – Tür/Fenster zu lange offen"
+  description: >
+    Meldet, wenn ein Fenster oder eine Tür länger als die eingestellte Zeit geöffnet bleibt.
+    Es können mehrere Kontakte ausgewählt werden; die Meldung nennt automatisch den Kontakt,
+    der zu lange offen ist. Geeignet für Fenster, Türen und allgemeine Öffnungssensoren.
+  domain: automation
+  source_url: https://github.com/123trs/wattzahls-home-assistant-blueprints/blob/main/automation/tuer-fenster-zu-lange-offen.yaml
+  author: WATTZAHLS.DE
+  homeassistant:
+    min_version: "2024.10.0"
+  input:
+    opening_entities:
+      name: Fenster- oder Türkontakte
+      description: Einer oder mehrere Kontakte, die überwacht werden sollen.
+      selector:
+        entity:
+          multiple: true
+          filter:
+            - domain: binary_sensor
+              device_class: window
+            - domain: binary_sensor
+              device_class: door
+            - domain: binary_sensor
+              device_class: opening
+    notify_target:
+      name: Benachrichtigungsziel
+      description: Notify-Entität, an die die Meldung gesendet wird.
+      selector:
+        entity:
+          domain: notify
+    open_minutes:
+      name: Meldung nach
+      description: Nach wie vielen Minuten Offenzeit soll gemeldet werden?
+      default: 10
+      selector:
+        number:
+          min: 1
+          max: 180
+          step: 1
+          unit_of_measurement: minutes
+          mode: box
+    notification_title:
+      name: Titel der Meldung
+      default: "Fenster/Tür noch offen"
+      selector:
+        text:
+
+mode: parallel
+max: 20
+max_exceeded: silent
+
+variables:
+  open_minutes_value: !input open_minutes
+  notification_title_value: !input notification_title
+
+triggers:
+  - trigger: state
+    entity_id: !input opening_entities
+    from: "off"
+    to: "on"
+    for:
+      minutes: !input open_minutes
+
+actions:
+  - alias: "Hinweis senden"
+    action: notify.send_message
+    target:
+      entity_id: !input notify_target
+    data:
+      title: "{{ notification_title_value }}"
+      message: >
+        {{ trigger.to_state.name }} ist seit {{ open_minutes_value | int }} Minuten geöffnet.
