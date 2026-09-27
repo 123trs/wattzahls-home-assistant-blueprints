@@ -17,6 +17,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 | 🌙 Nachtlicht | Bewegung + Zeitfenster + Helligkeit + Nachlauf | Blueprint unten importieren |
 | 🧺 Waschmaschine fertig | Meldung nach echtem Waschgang statt Standby-Fehlalarm | Blueprint unten importieren |
 | ☀️ Rollladen Hitzeschutz | Temperatur + Sonnenhöhe + Zielposition | Blueprint unten importieren |
+| 🪟 Fenster offen → Heizung aus | Thermostat beim Lüften aus, danach nur bei eigenem Eingriff wieder an | Blueprint unten importieren |
 | 💬 ChatGPT Automation | Wunsch in Alltagssprache planen, mit echten Entity-IDs und Test-Workflow | https://wattzahls.de/home-assistant-automation-chatgpt.html |
 | ⚙️ YAML Generator | 10 einfache Automations-Rezepte ohne YAML-Frust | https://wattzahls.de/home-assistant-automation-generator.html |
 | 🤖 Home Assistant mit KI | Vom ersten Start bis zu Automationen, Integrationen und Fehlersuche | https://wattzahls.de/home-assistant-mit-ki.html |
@@ -49,6 +50,17 @@ Außentemperatur und Sonnenhöhe müssen gleichzeitig über den Grenzwerten lieg
 [![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Frollladen-hitzeschutz.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/rollladen-hitzeschutz.yaml
+
+## 🪟 Fenster offen → Heizung aus
+
+Schaltet einen Thermostat nach einer einstellbaren Offen-Zeit aus und nach dem Schließen wieder ein. Ein eigener `input_boolean`-Helfer verhindert, dass ein bereits vorher ausgeschalteter Thermostat versehentlich eingeschaltet wird.
+
+Voraussetzung: Das Climate-Gerät unterstützt `climate.turn_off` und `climate.turn_on`.
+
+[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Ffenster-offen-heizung-aus.yaml)
+
+Quelle: https://wattzahls.de/blueprints/automation/wattzahls/fenster-offen-heizung-aus.yaml
+
 ## 🔋 Felix Speicherkapitän
 
 Der **Felix Speicherkapitän** ist unser kostenloses Werkzeug für PV-Speicher mit dynamischem Stromtarif. Er berechnet aus SOC, PV-Prognose, Verbrauch, Wirkungsgrad und Strompreisen ein sinnvolles Ziel-SOC und erzeugt anschließend ein Home-Assistant-YAML-Grundgerüst.
