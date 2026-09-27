@@ -18,6 +18,7 @@ Alle Beispiele stammen aus echter Smart-Home-Praxis und sind so aufgebaut, dass 
 | 🧺 Waschmaschine fertig | Meldung nach echtem Waschgang statt Standby-Fehlalarm | Blueprint unten importieren |
 | ☀️ Rollladen Hitzeschutz | Temperatur + Sonnenhöhe + Zielposition | Blueprint unten importieren |
 | 🪟 Fenster offen → Heizung aus | Thermostat beim Lüften aus, danach nur bei eigenem Eingriff wieder an | Blueprint unten importieren |
+| 🚪 Tür/Fenster zu lange offen | Meldung nach einstellbarer Offenzeit, auch für mehrere Kontakte | Blueprint unten importieren |
 | 💬 ChatGPT Automation | Wunsch in Alltagssprache planen, mit echten Entity-IDs und Test-Workflow | https://wattzahls.de/home-assistant-automation-chatgpt.html |
 | ⚙️ YAML Generator | 10 einfache Automations-Rezepte ohne YAML-Frust | https://wattzahls.de/home-assistant-automation-generator.html |
 | 🤖 Home Assistant mit KI | Vom ersten Start bis zu Automationen, Integrationen und Fehlersuche | https://wattzahls.de/home-assistant-mit-ki.html |
@@ -60,6 +61,15 @@ Voraussetzung: Das Climate-Gerät unterstützt `climate.turn_off` und `climate.t
 [![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Ffenster-offen-heizung-aus.yaml)
 
 Quelle: https://wattzahls.de/blueprints/automation/wattzahls/fenster-offen-heizung-aus.yaml
+
+
+## 🚪 Tür/Fenster zu lange offen
+
+Überwacht einen oder mehrere Fenster-/Türkontakte und sendet nach einer einstellbaren Offenzeit eine Meldung. Die Benachrichtigung nennt automatisch den Kontakt, der noch offen ist.
+
+[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2F123trs%2Fwattzahls-home-assistant-blueprints%2Fblob%2Fmain%2Fautomation%2Ftuer-fenster-zu-lange-offen.yaml)
+
+Quelle: https://wattzahls.de/blueprints/automation/wattzahls/tuer-fenster-zu-lange-offen.yaml
 
 ## 🔋 Felix Speicherkapitän
 
